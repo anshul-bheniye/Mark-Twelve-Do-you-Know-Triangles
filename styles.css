@@ -1,3 +1,31 @@
-body {
-  background-color: blueviolet;
+#isTriangle,
+#quiz,
+#hypotenuse,
+#area {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+  margin: 200px auto;
+}
+
+input,
+button {
+  width: 100px;
+  margin: auto;
+}
+
+.links {
+  display: flex;
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
 }

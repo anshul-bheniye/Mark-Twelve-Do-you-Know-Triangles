@@ -8,8 +8,136 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="links">
+        <a href="#isTriangle">Is Triangle</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#hypotenuse">Hypotenuse</a>
+        <a href="#area">Area Of Triangle</a>
+    </div>
     
+    <div id="isTriangle">   
+        <h2>Check Angles are triangle?</h2> 
+    <label for="numberOne"> Angle 1</label><input type="number" id="numberOne">
+    <label for="numberTwo"> Angle 2</label><input type="number" id="numberTwo">
+    <label for="numberThree"> Angle 3</label><input type="number" id="numberThree">
+    <button class="triangle-btn">Is Triangle</button>
+    <h2 class="output-triangle"></h2>
+   </div>
 
+   <div id="quiz">
+       <form id="form-quiz">
+           <h2>quiz on triangle</h2>
+           <h3>For each correct answer you will score 1 point.</h3>
+            <div class="quiz-question">
+                <p>There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R?</p>
+                <label>
+                    <input type="radio" name="question1" value="85°">
+                    85°
+                  </label>
+                  <label>
+                    <input type="radio" name="question1" value="65°">
+                    65°
+                  </label>
+                  <label>
+                    <input type="radio" name="question1" value="45°">
+                    45°
+                </label>
+            </div>
+
+            <div class="question-container">
+                <p>The perimeter of scalene triangle with sides a, b, c is</p>
+                <label>
+                  <input type="radio" name="question2" value="a + b + c">
+                  a + b + c
+                </label>
+                <label>
+                  <input type="radio" name="question2" value="2a">
+                  2a
+                </label>
+                <label>
+                  <input type="radio" name="question2" value="None of these">
+                  None of these
+                </label>
+            </div>
+
+            <div class="question-container">
+                <p>A scalene triangle has ___ lines of symmetry</p>
+                <label>
+                  <input type="radio" name="question9" value="two">two
+                </label>
+                <label>
+                  <input type="radio" name="question9" value="no">
+                  no
+                </label>
+                <label>
+                  <input type="radio" name="question9" value="15">
+                  15
+                </label>
+            </div>
+            
+            <div class="question-container">
+                <p>
+                  If one angle of a triangle is obtuse, then which one of the
+                  following is the possible measure of remaining angles?
+                </p>
+                <label>
+                  <input type="radio" name="question4" value="100°">
+                  100°
+                </label>
+                <label>
+                  <input type="radio" name="question4" value="85°">
+                  85°</label>
+            </div>
+
+            <div class="question-container">
+                <p>A triangle can have</p>
+                <label>
+                  <input type="radio" name="question5" value="one right angle">
+                  one right angle
+                </label>
+                <label><input type="radio" name="question5" value="two right angles">two
+                  right angles</label>
+            </div>
+
+            <button type="submit" class="submit">Submit</button>
+            <h2 class="output-quiz"></h2>
+        </form>
+   </div>
+
+    <div id="hypotenuse">
+        <h2>Check Hypotenuse</h2>
+        <h3>Lenght of Hypotenuse = sqrt(a² + b²)</h3>
+        <div class="container">
+			<div class="input-container">
+				<label for="a"> a = <input type="number" id="a" /></label>
+			</div>
+			<div class="input-container">
+				<label for="b"> b = <input type="number" id="b" /></label>
+			</div>
+			<button id="hypo-btn">Check Hypotenuse</button>
+		</div>
+		<h2 id="hypo-output"></h2>
+    </div>   
+
+    <div id="area">
+        <h2>Check Area Of a Triangle</h2>
+		<h3>Area of a triangle = 1/2(Base * Height)</h3>
+		<div class="container">
+            <div class="input-container">
+				<label for="base">Base(in cm)
+					<input type="number" id="base">
+				</label>
+			</div>
+			<div class="input-container">
+				<label for="height">Height(in cm)
+					<input type="number" id="height">
+				</label>
+			</div>
+			<button id="area-btn">Check Area</button>
+		<h2 id="area-output" class="output"></h2>            
+        </div>	
+        
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
