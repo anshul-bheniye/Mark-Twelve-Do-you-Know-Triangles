@@ -4,7 +4,7 @@ var angleThree = document.querySelector('#numberThree');
 var triBtn = document.querySelector('.triangle-btn');
 var isTriOutput = document.querySelector('.output-triangle');
 
-function triangleChecker(){
+var triangleChecker = () => {
     var sum = Number(angleOne.value) + Number(angleTwo.value) + Number(angleThree.value);
     console.log(sum);
     if(sum === 180){
@@ -23,7 +23,7 @@ const quizOutput = document.querySelector('.output-quiz');
 
 const correctAnswers = ['45°', 'a + b + c', 'no', '100°', 'one right angle'];
 
-function calculateScore(e) {
+var calculateScore = (e) => {
 	e.preventDefault();
 	const data = new FormData(quizForm);
 	let index = 0;
@@ -45,7 +45,7 @@ var secondSide = document.querySelector('#b');
 var hypoBtn = document.querySelector('#hypo-btn');
 var hypOutput = document.querySelector('#hypo-output');
 
-function calculateHypotenuse(){
+var calculateHypotenuse = () => {
     const sumOfSquares = firstSide.value * firstSide.value + secondSide.value * secondSide.value;
     // a * a + b * b
     console.log(sumOfSquares);
@@ -61,7 +61,7 @@ var height = document.querySelector('#height');
 var areaBtn = document.querySelector('#area-btn');
 var areaOutput = document.querySelector('#area-output');
 
-function calculateArea() {
+var calculateArea = () => {
 	//area = (base * height)/2
 	const bxh = base.value * height.value;
     console.log(bxh);
